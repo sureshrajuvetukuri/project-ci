@@ -32,3 +32,23 @@ plugins -- Nexus Artifact uploader
 syntax on nexus--- NexusArtifactUploader -- & nexus url , add credentials username- admin Password -- ID & description-- nexus-auth  
 
 GroupID -- goto pom.xml -- com.example .. Version -- **learn Dynamically .. 1.0.0 , repository url -- demoapp-release/
+
+Add -- Artifact-- goto pom.xml  1.springboot 2.jar 3.      4. file (/target/Uber.jar)    --- script Generated
+
+go to -- dynamiclly update versions -- using Plugin ---""" Pipeline Utility Steps """
+
+
+go to nexus dashboard ---see --- create new repository -- maven2(hosted) -- demoapp-snapshorts --- version snapshorts -- create repository --
+
+
+===========================
+docker credentials in scriped formate---- WithCredentials -- Bind credential to variables -- add secret text-- again -- jenkins communication -- add
+
+1.dockerhub_cred 2.hub Password 3.ID -Description-- git_cred
+
+2. Global credentials Added in jenkis -- manadatory
+
+
+
+
+
