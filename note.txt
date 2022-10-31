@@ -1,0 +1,34 @@
+jenkins -- sonar qube plugin >>pic(16) 1.SonarQube Scanner for Jenkins, 2.Sonar Gerrit Plugin, 3.Sonarqube generic coverage plugin -- after -- click (configure systems) -- see Sonar detailes
+
+other sonar qube plugins -- Quality Gate Plugin , Sonar Quality Gate plugin
+
+How to configure Sonar Qube---
+
+>> 1. name (SonarQube)
+2. sonar Url
+3.Add jenkins on sonar credentials-- secret text -- (go to sonar qube dashboaD  --- Administration -- security -- users -- tocken name -- jenkins-auth-- generate -- paste-- %%%%)
+
+4.id -- description -- sonar-api -- APPLY & SAVE 
+---------------------------------
+
+5. how to configure webhooks i jenkins & SonarQube
+
+go to SonarQube --- Administration -- configuration -- wenhooks-- click -- create-- any name , jenkins url/sonarqube-webhooks  , 
+
+
+
+================================================
+
+Nexus repo--- 
+
+go to Browse -- all of the repositories -- settings -- create repository -- maven(hosted)custom repo -- [stored on snapshorts..]
+
+inside repo -- name -- demoapp-release..maven -- release(repo) -- created.
+
+connection between nexus& jenkins repo---
+
+plugins -- Nexus Artifact uploader 
+
+syntax on nexus--- NexusArtifactUploader -- & nexus url , add credentials username- admin Password -- ID & description-- nexus-auth  
+
+GroupID -- goto pom.xml -- com.example .. Version -- **learn Dynamically .. 1.0.0 , repository url -- demoapp-release/
